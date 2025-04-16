@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashFlow - Микрозаймы нового поколения</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <nav class="nav">
+        <div class="nav__content">
+            <div class="nav__logo">CashFlow</div>
+            <div class="nav__links">
+                <a href="#features">Преимущества</a>
+                <a href="#application">Оформить</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Финансовая свобода<br>в несколько касаний</h1>
+        <a href="#application" class="cta-button">Оформить займ</a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features__grid">
+            <div class="features__card">
+                <h3>Мгновенное одобрение</h3>
+                <p>Автоматическая система проверки за 5 минут без скрытых комиссий</p>
+            </div>
+            <div class="features__card">
+                <h3>Прозрачные условия</h3>
+                <p>Четкие сроки и фиксированная ставка без дополнительных платежей</p>
+            </div>
+            <div class="features__card">
+                <h3>Цифровая безопасность</h3>
+                <p>Защита данных по стандарту PCI DSS и сквозное шифрование</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="application" id="application">
+        <div class="application__form">
+            <h2>Заявка на займ</h2>
+            <form id="loanForm">
+                <input type="text" placeholder="ФИО" required>
+                <input type="tel" placeholder="Телефон" required>
+                <input type="number" placeholder="Сумма (₽)" min="1000" max="100000" required>
+                <select required>
+                    <option value="">Срок погашения</option>
+                    <option>7 дней</option>
+                    <option>14 дней</option>
+                    <option>30 дней</option>
+                </select>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="reviews__header">
+            <h2>Отзывы клиентов</h2>
+        </div>
+        <div class="reviews__slider">
+            <div class="reviews__card">
+                <p>Потрясающий сервис! Получил деньги за 10 минут без лишних вопросов. Очень прозрачные условия и понятный интерфейс.</p>
+                <div class="reviews__author">
+                    <h4>Иван Петров</h4>
+                    <span>25 сентября 2023</span>
+                </div>
+            </div>
+            <div class="reviews__card">
+                <p>Впервые столкнулся с таким быстрым оформлением. Все четко, по делу, без скрытых комиссий. Рекомендую!</p>
+                <div class="reviews__author">
+                    <h4>Мария Иванова</h4>
+                    <span>18 октября 2023</span>
+                </div>
+            </div>
+            <div class="reviews__card">
+                <p>Лучший сервис микрозаймов в рунете. Удобное мобильное оформление и адекватная поддержка.</p>
+                <div class="reviews__author">
+                    <h4>Алексей Смирнов</h4>
+                    <span>5 ноября 2023</span>
+                </div>
+            </div>
+        </div>
+        <div class="reviews__nav reviews__nav--prev">←</div>
+        <div class="reviews__nav reviews__nav--next">→</div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__logo">CashFlow</h3>
+                <p class="footer__text">Финансовые решения нового поколения</p>
+            </div>
+            
+            <div class="footer__section">
+                <h4 class="footer__title">Контакты</h4>
+                <ul class="footer__list">
+                    <li><a href="tel:+78005553535">8 (800) 555-35-35</a></li>
+                    <li><a href="mailto:support@cashflow.ru">support@cashflow.ru</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__section">
+                <h4 class="footer__title">Документы</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <div class="footer__social">
+                <a href="#" aria-label="Telegram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 5L2 12.5L9 13.5M21 5L18.5 20L9 13.5M21 5L9 13.5M9 13.5V19L12.5 15.5"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="TikTok" class="footer__tiktok-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer__copy">© CashFlow 2025. Все права защищены</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
