@@ -41,6 +41,7 @@ body {
   padding-bottom: 2rem;
 }
 .reviews__card {
+  margin: 4rem;
   min-width: 400px;
   padding: 2.5rem;
   border: 1px solid var(--border);
@@ -87,12 +88,12 @@ body {
 .nav {
   z-index: 2;
   padding: 1.5rem 5%;
-  background: var(--light); /* Белый фон */
+  background: var(--light);
   position: static;
   width: 100%;
   top: 0;
   border-bottom: 1px solid var(--border);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05); /* Добавляем легкую тень */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
 .nav__content {
   max-width: 1200px;
@@ -148,11 +149,11 @@ body {
 .features__card:hover {
   transform: translateY(-5px);
 }
-.features__card h3 {
+.features__card .h3 {
   margin: 1.5rem 0 1rem;
   font-size: 1.3rem;
 }
-.features__card p {
+.features__card .p {
   color: #666;
 }
 .features__card::before {
@@ -187,7 +188,7 @@ body {
   height: 100%;
   background: repeating-linear-gradient(90deg, transparent 0, transparent 1px, rgba(255, 255, 255, 0.03) 1px, rgba(255, 255, 255, 0.03) 10px), repeating-linear-gradient(180deg, transparent 0, transparent 1px, rgba(255, 255, 255, 0.03) 1px, rgba(255, 255, 255, 0.03) 10px);
 }
-.hero h1 {
+.hero .h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
   line-height: 1.2;
@@ -226,11 +227,11 @@ body {
   padding: 3rem;
   border: 1px solid var(--border);
 }
-.application__form h2 {
+.application__form .h2 {
   margin-bottom: 2rem;
   text-align: center;
 }
-.application__form input, .application__form select {
+.application__form .input, .application__form .select {
   width: 100%;
   padding: 1rem;
   margin: 1rem 0;
@@ -238,7 +239,7 @@ body {
   background: transparent;
   transition: border-color 0.3s ease;
 }
-.application__form input:focus, .application__form select:focus {
+.application__form .input:focus, .application__form .select:focus {
   outline: none;
   border-color: var(--primary);
 }
@@ -262,8 +263,7 @@ body {
   padding: 4rem 5% 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-.footer__content {
+.footer .footer__content {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -272,38 +272,31 @@ body {
   padding-bottom: 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-.footer__section {
+.footer .footer__content .footer__section {
   margin-bottom: 2rem;
 }
-
-.footer__logo {
+.footer .footer__content .footer__section .footer__logo {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--accent);
 }
-
-.footer__title {
+.footer .footer__content .footer__section .footer__title {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   opacity: 0.8;
 }
-
-.footer__list li {
+.footer .footer__content .footer__section .footer__list li {
   margin-bottom: 0.8rem;
 }
-
-.footer__list a {
+.footer .footer__content .footer__section .footer__list a {
   color: inherit;
   text-decoration: none;
   transition: opacity 0.3s;
 }
-
-.footer__list a:hover {
+.footer .footer__content .footer__section .footer__list a:hover {
   opacity: 0.7;
 }
-
-.footer__bottom {
+.footer .footer__bottom {
   max-width: 1200px;
   margin: 2rem auto 0;
   display: flex;
@@ -311,28 +304,23 @@ body {
   align-items: center;
   padding-top: 2rem;
 }
-
-.footer__social {
+.footer .footer__bottom .footer__social {
   display: flex;
   gap: 1.5rem;
 }
-
-.footer__social a {
+.footer .footer__bottom .footer__social a {
   color: var(--light);
   transition: color 0.3s;
 }
-
-.footer__social a:hover {
+.footer .footer__bottom .footer__social a:hover {
   color: var(--accent);
 }
-
-.footer__copy {
+.footer .footer__bottom .footer__social .footer__tiktok-icon {
+  padding-top: 2px;
+}
+.footer .footer__bottom .footer__copy {
   opacity: 0.6;
   font-size: 0.9rem;
-}
-
-.footer__tiktok-icon {
-  padding-top: 2px;
 }
 
 @media (max-width: 768px) {
@@ -345,9 +333,6 @@ body {
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
-  }
-  .nav__links {
-    display: none;
   }
 }
 @media (max-width: 768px) {

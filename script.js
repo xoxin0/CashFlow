@@ -1,18 +1,6 @@
 const slider = document.querySelector('.reviews__slider');
-const prevButton = document.querySelector('.reviews__nav--prev');
-const nextButton = document.querySelector('.reviews__nav--next');
 const cards = document.querySelectorAll('.reviews__card');
 let currentIndex = 0;
-
-nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % cards.length;
-    updateSlider();
-});
-
-prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-    updateSlider();
-});
 
 function updateSlider() {
     const cardWidth = cards[0].offsetWidth + 32;
@@ -37,8 +25,4 @@ document.addEventListener('mousemove', (e) => {
 
         card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
     });
-});
-
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.nav');
 });

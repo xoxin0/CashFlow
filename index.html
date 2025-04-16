@@ -12,42 +12,42 @@
         <div class="nav__content">
             <div class="nav__logo">CashFlow</div>
             <div class="nav__links">
-                <a href="#features">Преимущества</a>
+                <a href="#features" tabindex="0">Преимущества</a>
                 <a href="#application">Оформить</a>
             </div>
         </div>
     </nav>
 
     <section class="hero">
-        <h1>Финансовая свобода<br>в несколько касаний</h1>
+        <h1 class="h1">Финансовая свобода в несколько касаний</h1>
         <a href="#application" class="cta-button">Оформить займ</a>
     </section>
 
     <section class="features" id="features">
         <div class="features__grid">
             <div class="features__card">
-                <h3>Мгновенное одобрение</h3>
-                <p>Автоматическая система проверки за 5 минут без скрытых комиссий</p>
+                <h3 class="h3">Мгновенное одобрение</h3>
+                <p class="p">Автоматическая система проверки за 5 минут без скрытых комиссий</p>
             </div>
             <div class="features__card">
-                <h3>Прозрачные условия</h3>
-                <p>Четкие сроки и фиксированная ставка без дополнительных платежей</p>
+                <h3 class="h3">Прозрачные условия</h3>
+                <p class="p">Четкие сроки и фиксированная ставка без дополнительных платежей</p>
             </div>
             <div class="features__card">
-                <h3>Цифровая безопасность</h3>
-                <p>Защита данных по стандарту PCI DSS и сквозное шифрование</p>
+                <h3 class="h3">Цифровая безопасность</h3>
+                <p class="p">Защита данных по стандарту PCI DSS и сквозное шифрование</p>
             </div>
         </div>
     </section>
 
     <section class="application" id="application">
         <div class="application__form">
-            <h2>Заявка на займ</h2>
-            <form id="loanForm">
-                <input type="text" placeholder="ФИО" required>
-                <input type="tel" placeholder="Телефон" required>
-                <input type="number" placeholder="Сумма (₽)" min="1000" max="100000" required>
-                <select required>
+            <h2 class="h2">Заявка на займ</h2>
+            <form id="loanForm" action="#" method="#">
+                <input type="text" placeholder="ФИО" required class="input">
+                <input type="tel" placeholder="Телефон" required class="input">
+                <input type="number" placeholder="Сумма (₽)" min="1000" max="100000" required class="input">
+                <select required class="select">
                     <option value="">Срок погашения</option>
                     <option>7 дней</option>
                     <option>14 дней</option>
@@ -85,8 +85,6 @@
                 </div>
             </div>
         </div>
-        <div class="reviews__nav reviews__nav--prev">←</div>
-        <div class="reviews__nav reviews__nav--next">→</div>
     </section>
 
     <footer class="footer">
